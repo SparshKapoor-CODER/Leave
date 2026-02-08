@@ -31,8 +31,18 @@ def test_login():
     if supervisor:
         print(f"✓ Hostel supervisor login successful!")
         print(f"  Name: {supervisor['name']}")
+        print(f"  Block: {supervisor['hostel_block']}")
     else:
         print("✗ Hostel supervisor login failed!")
+    
+    print("\nTesting Block B supervisor login...")
+    supervisor_b = HostelSupervisor.login("S002", "supervisor123")
+    if supervisor_b:
+        print(f"✓ Hostel supervisor B login successful!")
+        print(f"  Name: {supervisor_b['name']}")
+        print(f"  Block: {supervisor_b['hostel_block']}")
+    else:
+        print("✗ Hostel supervisor B login failed!")
 
 if __name__ == '__main__':
     test_login()
