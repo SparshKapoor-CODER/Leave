@@ -47,21 +47,6 @@
                         </div>
                     </div>
                     
-                    <div class="mb-3">
-                        <label for="hostel_block" class="form-label required">Hostel Block</label>
-                        <select class="form-select" id="hostel_block" name="hostel_block" required>
-                            <option value="" selected disabled>Select hostel block</option>
-                            <option value="A">A Block</option>
-                            <option value="B">B Block</option>
-                            <option value="C">C Block</option>
-                            <option value="D">D Block</option>
-                            <option value="E">E Block</option>
-                            <option value="F">F Block</option>
-                            <option value="G">G Block</option>
-                            <option value="H">H Block</option>
-                        </select>
-                    </div>
-                    
                     <div class="d-grid gap-2 mb-4">
                         <button type="submit" class="btn btn-vit">
                             <i class="fas fa-sign-in-alt me-2"></i>Login to Hostel Portal
@@ -130,10 +115,5 @@
             icon.classList.add('fa-eye');
         }
     });
-    
-    // Set today's date for reference
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('from_date').min = today;
-    document.getElementById('to_date').min = today;
 </script>
 {% endblock %}
